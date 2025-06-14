@@ -212,11 +212,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp HOME     &kp END        &kp SLASH        &kp KP_N7        &kp KP_NUMBER_8    &kp KP_NUMBER_9
-&kp TAB         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp DEL      &kp MINUS      &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp PLUS         &kp KP_NUMBER_1  &kp KP_NUMBER_2    &kp KP_NUMBER_3
-&kp LCTRL       &trans        &trans        &trans        &trans        &kp CAPS  &trans       &kp SPACE      &kp RIGHT_SHIFT  &kp N0           &mt2 PERIOD COMMA  &kp ENTER
-                              &trans        &trans        &trans        &trans    &trans       &trans         &trans           &trans
+&kp TILDE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp HOME     &kp END        &kp SLASH     &kp KP_N7        &kp KP_NUMBER_8    &kp KP_NUMBER_9
+&kp TAB         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp DEL      &kp MINUS      &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2    &kp KP_NUMBER_3
+&kp LCTRL       &trans        &trans        &trans        &trans        &kp CAPS  &trans       &kp SPACE      &kp RCTRL     &kp N0           &mt2 PERIOD COMMA  &kp ENTER
+                              &trans        &trans        &trans        &trans    &trans       &trans         &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
