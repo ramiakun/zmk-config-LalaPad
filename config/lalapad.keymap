@@ -218,6 +218,8 @@
 &kp LCTRL       &trans        &trans        &trans        &trans        &kp CAPS  &trans       &kp SPACE      &kp RIGHT_SHIFT  &kp N0           &mt2 PERIOD COMMA  &kp ENTER
                               &trans        &trans        &trans        &trans    &trans       &trans         &trans           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
         };
 
         SYSTEM_LAYER {
