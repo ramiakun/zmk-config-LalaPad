@@ -185,14 +185,14 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_up_down>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
 
             bindings = <
-&kp GRAVE  &kp Q         &kp W           &kp E     &kp R        &kp T                     &kp Y                   &kp U        &kp I            &kp O       &kp P           &mt EQUAL MINUS
-&kp TAB    &kp A         &kp S           &kp D     &kp F        &kp G                     &kp H                   &kp J        &kp K            &kp L       &mt2 SEMI LBKT  &mt2 SQT RBKT
-&kp LSHFT  &kp Z         &kp X           &kp C     &kp V        &kp B                     &kp N                   &kp M        &kp COMMA        &kp PERIOD  &mt2 UP SLASH   &kp BSLH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT    &mo 1     &mo 4        &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp SPACE    &mo 4            &kp LEFT    &kp DOWN        &kp RIGHT
-                         &kp LANGUAGE_2  &kp CAPS  &allow_home  &kp LANG_HANGEUL          &allow_pageup           &allow_home  &allow_pagedown  &allow_end
+&kp GRAVE  &kp Q         &kp W           &kp E     &kp R      &kp T             &kp Y                   &kp U          &kp I            &kp O       &kp P            &mt EQUAL MINUS
+&kp TAB    &kp A         &kp S           &kp D     &kp F      &kp G             &kp H                   &kp J          &kp K            &kp L       &mt2 SEMI LBKT   &mt2 SQT RBKT
+&kp LSHFT  &kp Z         &kp X           &kp C     &kp V      &kp B             &kp N                   &kp M          &kp COMMA        &kp PERIOD  &mt2 UP SLASH    &kp BSLH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT    &mo 1     &kp SPACE  &lt 4 LANG2       &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &mo 2            &kp RCTRL   &kp RIGHT_SHIFT  &kp CAPSLOCK
+                         &kp LANGUAGE_2  &kp CAPS  &to 5      &kp LANG_HANGEUL  &allow_pageup           &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
@@ -212,37 +212,35 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp TILDE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp HOME     &kp END        &kp SLASH     &kp KP_N7        &kp KP_NUMBER_8    &kp KP_NUMBER_9
-&kp TAB         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp DEL      &kp MINUS      &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2    &kp KP_NUMBER_3
-&kp LCTRL       &trans        &trans        &trans        &trans        &kp CAPS  &trans       &kp SPACE      &kp RCTRL     &kp N0           &mt2 PERIOD COMMA  &kp ENTER
-                              &trans        &trans        &trans        &trans    &trans       &trans         &trans        &trans
+&kp TILDE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp HOME       &kp END        &kp SLASH     &kp KP_N7        &kp KP_NUMBER_8    &kp KP_NUMBER_9
+&kp TAB         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp BACKSPACE  &kp MINUS      &kp ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans    &kp PAGE_UP    &kp PAGE_DOWN  &kp PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2    &kp KP_NUMBER_3
+&kp LCTRL       &trans        &trans        &kp LCTRL     &kp SPACE     &kp CAPS  &trans         &trans         &trans        &kp N0           &mt2 PERIOD COMMA  &kp ENTER
+                              &trans        &trans        &trans        &trans    &trans         &trans         &trans        &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_DOWN) LC(K_SCROLL_UP)>;
         };
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&volume_up_down>, <&volume_up_down>;
+            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
-                &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans        &trans        &trans          &trans        &trans          &trans
+&trans  &trans   &trans   &trans   &trans   &trans   &trans        &trans        &trans          &trans        &trans          &trans
+                 &trans   &trans   &trans   &trans   &trans        &trans        &trans          &trans
             >;
         };
 
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&kp TAB         &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none   &none
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &none      &mkp MB5   &trans  &trans
-&kp LCTRL       &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans          &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans     &trans     &trans     &trans  &trans
+&kp TAB         &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none   &none
+&kp LEFT_SHIFT  &trans  &trans  &trans     &trans     &trans     &trans  &mkp MB4   &none      &mkp MB5   &trans  &trans
+&kp LCTRL       &trans  &trans  &trans     &trans     &trans     &trans  &trans     &trans     &trans     &trans  &trans
+                        &trans  &trans     &trans     &trans     &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings =
@@ -253,12 +251,14 @@
         SCROLL_R_LAYER {
             display-name = "scroll_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE       &kp Q         &kp L           &kp E         &mt COMMA PERIOD  &mt SLASH NON_US_BACKSLASH  &kp F             &kp W          &kp R   &kp Y      &kp P            &mt LEFT_BRACKET RIGHT_BRACKET
+&kp TAB         &kp U         &kp I           &kp A         &kp O             &mt MINUS EQUAL             &kp K             &kp T          &kp N   &kp S      &kp H            &mt LESS_THAN GREATER_THAN
+&kp LEFT_SHIFT  &kp Z         &kp X           &kp C         &kp V             &mt SQT SEMICOLON           &kp G             &kp D          &kp M   &kp J      &kp B            &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 1         &kp SPACE         &lt 4 LANGUAGE_2            &lt 3 LANGUAGE_1  &kp BACKSPACE  &mo 2   &kp RCTRL  &kp RIGHT_SHIFT  &kp CAPSLOCK
+                              &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &trans            &trans         &trans  &trans
             >;
+
+            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
         };
 
         MOUSE_L_LAYER {
