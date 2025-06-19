@@ -250,7 +250,7 @@
             display-name = "mouse_l_layer";
             bindings = <
 &kp GRAVE       &kp Q         &kp L           &kp E         &mt COMMA PERIOD  &mt SLASH NON_US_BACKSLASH  &kp F             &kp W          &kp R   &kp Y      &kp P            &mt LEFT_BRACKET RIGHT_BRACKET
-&kp TAB         &kp A         &kp S           &kp B         &kp F             &mt MINUS EQUAL             &kp K             &kp T          &kp N   &kp S      &kp H            &mt LESS_THAN GREATER_THAN
+&kp TAB         &kp U         &kp I           &kp A         &kp O             &mt MINUS EQUAL             &kp K             &kp T          &kp N   &kp S      &kp H            &mt LESS_THAN GREATER_THAN
 &kp LEFT_SHIFT  &kp Z         &kp X           &kp C         &kp V             &mt SEMICOLON SEMICOLON     &kp G             &kp D          &kp M   &kp J      &kp B            &mt LEFT_PARENTHESIS RPAR
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 1         &lt 4 SPACE       &lt 4 LANGUAGE_2            &lt 3 LANGUAGE_1  &kp BACKSPACE  &mo 2   &kp RCTRL  &kp RIGHT_SHIFT  &kp CAPS
                               &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &trans            &trans         &trans  &trans
