@@ -236,26 +236,24 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans          &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans     &trans     &trans     &trans  &trans
-&kp TAB         &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none   &none
-&kp LEFT_SHIFT  &trans  &trans  &trans     &trans     &trans     &trans  &mkp MB4   &none      &mkp MB5   &trans  &trans
-&kp LCTRL       &trans  &trans  &trans     &trans     &trans     &trans  &trans     &trans     &trans     &trans  &trans
-                        &trans  &trans     &trans     &trans     &trans  &trans     &trans     &trans
+&trans          &trans  &mkp MB4   &trans     &mkp MB5   &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&kp TAB         &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &none   &none
+&kp LEFT_SHIFT  &trans  &trans     &trans     &trans     &trans  &trans  &mkp MB4   &none      &mkp MB5   &trans  &trans
+&kp LCTRL       &trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans  &trans
+                        &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp RIGHT LEFT>,
-                <&inc_dec_kp RC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&scroll_up_down>;
         };
 
         SCROLL_R_LAYER {
             display-name = "scroll_r_layer";
             bindings = <
-&kp GRAVE       &kp Q         &kp L           &kp E         &mt COMMA PERIOD  &mt SLASH NON_US_BACKSLASH  &kp F             &kp W          &kp R   &kp Y      &kp P            &mt LEFT_BRACKET RIGHT_BRACKET
-&kp TAB         &kp U         &kp I           &kp A         &kp O             &mt MINUS EQUAL             &kp K             &kp T          &kp N   &kp S      &kp H            &mt LESS_THAN GREATER_THAN
-&kp LEFT_SHIFT  &kp Z         &kp X           &kp C         &kp V             &mt SQT SEMICOLON           &kp G             &kp D          &kp M   &kp J      &kp B            &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 1         &kp SPACE         &lt 4 LANGUAGE_2            &lt 3 LANGUAGE_1  &kp BACKSPACE  &mo 2   &kp RCTRL  &kp RIGHT_SHIFT  &kp CAPSLOCK
-                              &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &trans            &trans         &trans  &trans
+&kp GRAVE       &kp Q         &kp L           &kp E         &mt COMMA PERIOD  &mt SLASH NON_US_BACKSLASH  &kp F             &kp W          &kp R       &kp Y       &kp P            &mt LEFT_BRACKET RIGHT_BRACKET
+&kp TAB         &kp U         &kp I           &kp A         &kp O             &mt MINUS EQUAL             &kp K             &kp T          &kp N       &kp S       &kp H            &mt LESS_THAN GREATER_THAN
+&kp LEFT_SHIFT  &kp Z         &kp X           &kp C         &kp V             &mt SQT SEMICOLON           &kp G             &kp D          &kp M       &kp J       &kp B            &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 1         &kp SPACE         &lt 4 LANGUAGE_2            &lt 3 LANGUAGE_1  &kp BACKSPACE  &mo 2       &kp RCTRL   &kp RIGHT_SHIFT  &kp CAPSLOCK
+                              &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &allow_pageup     &allow_home    &allow_end  &allow_end
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
