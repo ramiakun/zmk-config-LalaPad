@@ -222,7 +222,7 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+            sensor-bindings = <&scroll_down_up>, <&scroll_down_up>;
 
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
@@ -255,6 +255,8 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 1         &lt 4 SPACE       &lt 4 LANGUAGE_2            &lt 3 LANGUAGE_1  &kp BACKSPACE  &mo 2   &kp RCTRL  &kp RIGHT_SHIFT  &kp CAPS
                               &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &trans            &trans         &trans  &trans
             >;
+
+            sensor-bindings = <&volume_up_down>, <&scroll_left_right>;
         };
 
         SCROLL_L_LAYER {
