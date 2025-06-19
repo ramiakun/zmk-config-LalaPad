@@ -192,7 +192,7 @@
 &kp TAB    &kp A         &kp S           &kp D     &kp F        &kp G             &kp H          &kp J          &kp K            &kp L       &mt2 SEMI LBKT   &mt2 SQT RBKT
 &kp LSHFT  &kp Z         &kp X           &kp C     &kp V        &kp B             &kp N          &kp M          &kp COMMA        &kp PERIOD  &mt2 UP SLASH    &kp BSLH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT    &mo 1     &lt 4 SPACE  &lt 4 LANG2       &lt 3 LANG1    &kp BACKSPACE  &mo 2            &kp RCTRL   &kp RIGHT_SHIFT  &kp CAPSLOCK
-                         &kp LANGUAGE_2  &kp CAPS  &to 0        &kp LANG_HANGEUL  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
+                         &kp LANGUAGE_2  &kp CAPS  &to 5        &kp LANG_HANGEUL  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
