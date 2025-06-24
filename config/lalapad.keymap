@@ -206,7 +206,7 @@
                               &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &allow_pageup     &allow_home    &allow_pagedown  &allow_end
             >;
 
-            sensor-bindings = <&scroll_down_up>, <&scroll_down_up>;
+            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
         };
 
         SECONDARY_LAYER {
