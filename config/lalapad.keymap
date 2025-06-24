@@ -183,19 +183,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        MOUSE_L_LAYER {
-            display-name = "mouse_l_layer";
-            bindings = <
-&kp GRAVE       &kp Q         &kp L           &kp E         &mt PERIOD COMMA  &mt NON_US_BACKSLASH SLASH  &kp F             &kp W          &kp R   &kp Y      &kp P            &mt LEFT_BRACKET RIGHT_BRACKET
-&kp TAB         &kp U         &kp I           &kp A         &kp O             &mt EQUAL MINUS             &kp K             &kp T          &kp N   &kp S      &kp H            &mt LESS_THAN GREATER_THAN
-&kp LEFT_SHIFT  &kp Z         &kp X           &kp C         &kp V             &mt SEMICOLON SQT           &kp G             &kp D          &kp M   &kp J      &kp B            &mt LEFT_PARENTHESIS RPAR
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 2         &lt 5 SPACE       &lt 5 LANGUAGE_2            &lt 4 LANGUAGE_1  &kp BACKSPACE  &mo 3   &kp RCTRL  &kp RIGHT_SHIFT  &kp CAPS
-                              &kp LANGUAGE_2  &kp CAPSLOCK  &to 1             &kp LANGUAGE_1              &trans            &trans         &trans  &trans
-            >;
-
-            sensor-bindings = <&volume_up_down>, <&scroll_left_right>;
-        };
-
         DEFAULT_LAYER {
             display-name = "Default";
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
@@ -205,8 +192,21 @@
 &kp TAB    &kp A         &kp S           &kp D     &kp F        &kp G             &kp H          &kp J          &kp K            &kp L       &mt2 SEMI LBKT   &mt2 SQT RBKT
 &kp LSHFT  &kp Z         &kp X           &kp C     &kp V        &kp B             &kp N          &kp M          &kp COMMA        &kp PERIOD  &mt2 UP SLASH    &kp BSLH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT    &mo 2     &lt 5 SPACE  &lt 5 LANG2       &lt 4 LANG1    &kp BACKSPACE  &mo 3            &kp RCTRL   &kp RIGHT_SHIFT  &kp CAPSLOCK
-                         &kp LANGUAGE_2  &kp CAPS  &to 0        &kp LANG_HANGEUL  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
+                         &kp LANGUAGE_2  &kp CAPS  &to 1        &kp LANG_HANGEUL  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
+        };
+
+        MOUSE_L_LAYER {
+            display-name = "mouse_l_layer";
+            bindings = <
+&kp GRAVE       &kp Q         &kp L           &kp E         &mt PERIOD COMMA  &mt NON_US_BACKSLASH SLASH  &kp F             &kp W          &kp R            &kp Y       &kp P            &mt LEFT_BRACKET RIGHT_BRACKET
+&kp TAB         &kp U         &kp I           &kp A         &kp O             &mt EQUAL MINUS             &kp K             &kp T          &kp N            &kp S       &kp H            &mt LESS_THAN GREATER_THAN
+&kp LEFT_SHIFT  &kp Z         &kp X           &kp C         &kp V             &mt SEMICOLON SQT           &kp G             &kp D          &kp M            &kp J       &kp B            &mt LEFT_PARENTHESIS RPAR
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT    &mo 2         &lt 5 SPACE       &lt 5 LANGUAGE_2            &lt 4 LANGUAGE_1  &kp BACKSPACE  &mo 3            &kp RCTRL   &kp RIGHT_SHIFT  &kp CAPS
+                              &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &allow_pageup     &allow_home    &allow_pagedown  &allow_end
+            >;
+
+            sensor-bindings = <&volume_up_down>, <&scroll_left_right>;
         };
 
         SECONDARY_LAYER {
