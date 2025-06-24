@@ -206,7 +206,7 @@
                               &kp LANGUAGE_2  &kp CAPSLOCK  &to 0             &kp LANGUAGE_1              &allow_pageup     &allow_home    &allow_pagedown  &allow_end
             >;
 
-            sensor-bindings = <&volume_up_down>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_down_up>, <&scroll_down_up>;
         };
 
         SECONDARY_LAYER {
@@ -231,11 +231,13 @@
 &kp LCTRL       &trans        &trans        &kp LCTRL     &kp SPACE     &kp CAPS  &trans         &trans         &trans        &kp N0           &mt2 PERIOD COMMA  &kp ENTER
                               &trans        &trans        &trans        &trans    &trans         &trans         &trans        &trans
             >;
+
+            sensor-bindings = <&scroll_down_up>, <&scroll_down_up>;
         };
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&scroll_down_up>;
+            sensor-bindings = <&volume_up_down>, <&volume_up_down>;
 
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
